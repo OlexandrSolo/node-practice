@@ -9,5 +9,6 @@ const moviesRouter = Router();
 moviesRouter.get("/", ctrlWrapper(movieControllers.getMovieByIdController));
 
 moviesRouter.get("/:id", ctrlWrapper(movieControllers.getMovieByIdController));
+moviesRouter.post('/', ctrlWrapper(movieControllers.addMovieController))
 
 export default moviesRouter;

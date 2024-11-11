@@ -23,4 +23,8 @@ export const getMovieByIdController = async (req, res) => {
         message: `Movie id-${id} find`,
         data
     })
+};
+
+export const addMovieController = async (req, res) => {
+
 }
